@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocMind | Transforma tus documentos en conocimiento claro</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hola, esta es mi landing ✨</h1>
-  <p>Prueba inicial.</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="navbar-left">
+        <!-- Aquí luego puedes reemplazar por un <img> de tu logo -->
+        <div class="logo-icon">📄</div>
+        <span class="logo-text">DocMind</span>
+      </div>
+      <nav class="navbar-links">
+        <a href="#features">Características</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="navbar-right">
+        <button class="btn btn-outline">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-badge">⚡ Impulsado por IA avanzada</div>
+
+        <h1 class="hero-title">
+          Transforma tus documentos en
+          <span class="hero-highlight">conocimiento claro</span>
+          y verificable
+        </h1>
+
+        <p class="hero-subtitle">
+          Analiza PDFs, Word y reportes con IA. Obtén respuestas instantáneas,
+          resúmenes ejecutivos y citas verificables.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary">Sube tu documento</button>
+          <button class="btn btn-secondary">Ver demo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ DOCMIND -->
+    <section id="features" class="why">
+      <div class="container">
+        <h2 class="section-title">¿Por qué DocMind?</h2>
+        <p class="section-subtitle">
+          Todo lo que necesitas para entender tus documentos
+        </p>
+
+        <div class="cards-row">
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Rapidez</h3>
+            <p>
+              Análisis instantáneo de documentos complejos en segundos.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Precisión</h3>
+            <p>
+              IA entrenada con millones de documentos para máxima exactitud.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>Trazabilidad</h3>
+            <p>
+              Cada respuesta incluye citas verificables del texto original.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Exportación</h3>
+            <p>
+              Genera reportes profesionales en PDF, Word o Markdown.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS DE USO -->
+    <section class="use-cases">
+      <div class="container">
+        <h2 class="section-title">Casos de uso</h2>
+        <p class="section-subtitle">
+          Potencia tu trabajo en múltiples industrias
+        </p>
+
+        <div class="cards-row">
+          <!-- CARD 1 -->
+          <article class="use-card">
+            <!-- Espacio para imagen: reemplaza este div por un <img> -->
+            <div class="image-placeholder">
+              Imagen análisis legal
+            </div>
+            <div class="use-card-body">
+              <h3>Análisis legal</h3>
+              <p>
+                Identifica cláusulas clave, riesgos y obligaciones en contratos legales.
+              </p>
+              <a href="#" class="link-more">Conocer más →</a>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="use-card">
+            <!-- Espacio para imagen -->
+            <div class="image-placeholder">
+              Imagen research papers
+            </div>
+            <div class="use-card-body">
+              <h3>Research papers</h3>
+              <p>
+                Extrae metodologías, resultados y conclusiones de papers académicos.
+              </p>
+              <a href="#" class="link-more">Conocer más →</a>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="use-card">
+            <!-- Espacio para imagen -->
+            <div class="image-placeholder">
+              Imagen reportes financieros
+            </div>
+            <div class="use-card-body">
+              <h3>Reportes financieros</h3>
+              <p>
+                Detecta métricas clave, tendencias y datos financieros relevantes.
+              </p>
+              <a href="#" class="link-more">Conocer más →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THE PRODUCT -->
+    <section class="about-product">
+      <div class="container">
+        <h2 class="section-title">About the Product</h2>
+        <p class="section-subtitle">
+          DocMind utiliza tecnología de IA de última generación para transformar
+          la manera en que trabajas con documentos
+        </p>
+
+        <div class="video-card">
+          <!-- Espacio para imagen/video de producto -->
+          <div class="video-placeholder">
+            <button class="play-button">▶</button>
+            <p>Vídeo demostrativo del producto</p>
+            <span>Haz clic para reproducir</span>
+          </div>
+        </div>
+
+        <div class="cards-row lower">
+          <article class="feature-card">
+            <h3>Procesamiento inteligente</h3>
+            <p>
+              Algoritmos de NLP que comprenden el contexto y significado de tus documentos.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Respuestas verificables</h3>
+            <p>
+              Cada respuesta incluye referencias exactas al documento original.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Múltiples formatos</h3>
+            <p>
+              Compatible con PDF, Word, Excel, PowerPoint y más.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Seguridad enterprise</h3>
+            <p>
+              Encriptación de nivel bancario y cumplimiento con GDPR y SOC 2.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THE TEAM -->
+    <section class="about-team">
+      <div class="container">
+        <h2 class="section-title">About the Team</h2>
+        <p class="section-subtitle">
+          Conoce al equipo de expertos en IA y procesamiento de lenguaje natural
+          detrás de DocMind
+        </p>
+
+        <div class="video-card">
+          <!-- Espacio para imagen/video del equipo -->
+          <div class="video-placeholder">
+            <button class="play-button">▶</button>
+            <p>Conoce a nuestro equipo</p>
+            <span>Haz clic para reproducir</span>
+          </div>
+        </div>
+
+        <h3 class="values-title">Nuestros valores</h3>
+        <div class="values-row">
+          <article class="value-card">
+            <h4>Innovación</h4>
+            <p>Constantemente mejorando nuestros algoritmos.</p>
+          </article>
+          <article class="value-card">
+            <h4>Transparencia</h4>
+            <p>Resultados verificables y explicables.</p>
+          </article>
+          <article class="value-card">
+            <h4>Privacidad</h4>
+            <p>Tus documentos son privados y seguros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="pricing" class="cta">
+      <div class="container cta-inner">
+        <h2>Comienza a analizar tus documentos hoy</h2>
+        <p>
+          Únete a miles de profesionales que confían en DocMind para transformar sus documentos.
+        </p>
+        <button class="btn btn-light">Prueba gratis por 14 días</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo-icon small">📄</div>
+        <h4>DocMind</h4>
+        <p>
+          Transformamos documentos en conocimiento verificable con IA.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Producto</h5>
+        <a href="#features">Características</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#features">Casos de uso</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Seguridad</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2025 DocMind. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
