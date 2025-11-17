@@ -76,6 +76,14 @@ body {
   gap: 8px;
 }
 
+/* Logo como imagen */
+.logo-image {
+  height: 32px;      /* controla el tamaño del logo */
+  width: auto;
+  display: block;
+}
+
+/* Icono usado en el footer (puede quedarse así) */
 .logo-icon {
   width: 32px;
   height: 32px;
@@ -260,6 +268,11 @@ body {
   gap: 20px;
 }
 
+/* Ajuste solo para CASOS DE USO: 3 columnas centradas */
+.use-cases .cards-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .feature-card {
   background: var(--color-card-bg);
   border-radius: var(--radius-lg);
@@ -307,20 +320,7 @@ body {
   flex-direction: column;
 }
 
-.image-placeholder {
-  background: #dfe9f5;
-  color: #4a5a6c;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 180px;
-  text-align: center;
-}
-
-/* Cuando quieras, reemplaza el div.image-placeholder por:
-   <img src="ruta-de-tu-imagen.jpg" class="use-card-img" alt="Descripción" />
-*/
+/* Imagen de la card */
 .use-card-img {
   width: 100%;
   height: 180px;
